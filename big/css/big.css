@@ -1,0 +1,202 @@
+/* BIG WEB120 */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    background-color:#d2b88f;
+}
+
+div.wrapper,footer {
+    width:90%;
+    margin:auto;
+    background-color:#fff;
+    overflow:auto;
+}
+
+section {
+    float:left;
+    width:64%;
+    padding-left:2.5%;
+    padding-top: 2.5%;
+}
+
+aside {
+    float:right;
+    width:26%;
+    padding-right:2.5%;
+    padding-top: 2.5%;
+}
+    
+section img {
+    width: 75%;
+    padding-left: 1.5%;
+}
+
+section div.img-credit {
+    text-indent: 1.5%;
+}
+
+section ul {
+    padding-left: 5%; 
+}
+
+header h1 {
+    text-align:right;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight:bold;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+address {    
+    padding-top: 2.5%;
+}
+
+.phone {    
+    padding-top: 2.5%;
+}
+
+.email {    
+    padding-top: 2.5%;
+}
+
+p{
+    margin:1em .8em;
+}
+
+aside .citation {
+    padding-top: 5%
+}
+
+/* Start - Embed Responsively Rules! */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+/*End - Embed Responsively Rules!*/
+
+/*Hide Agenda View*/
+div.embed-container.agenda-view {
+    display:none;
+}
+
+footer {
+    text-align:center;
+    text-transform:uppercase;
+    clear:both;
+}
+
+footer p {
+    padding:2em;
+}
+
+footer a {
+    color:red;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:white;
+    background-color:black;
+}
+
+/*Hide agenda view of calendar*/
+.embed-container.phone {
+    display:none;
+}
+
+/*DESKTOP*/
+@media all and (max-width:1400px) {
+    section {
+        width:64%;
+        float:left;
+    }
+
+    aside {
+        width:26%;
+        float:right;
+    }
+}
+
+/*TABLET*/
+@media all and (min-width:860px) and (max-width:1399px) {
+    div.wrapper {
+        width:90%;
+    }
+    
+    section {
+        width:64%;
+        float:left;
+        padding-left:2.5%;
+        padding-top: 2.5%;
+    }
+
+    aside {
+        width:26%;
+        float:right;
+        padding-right:2.5%;
+        padding-top: 2.5%;
+    }
+}
+
+/*Calendar rules for PHONE*/
+@media all and (max-width:1440px) {
+    
+/*Show agenda view of calendar*/ 
+    div.embed-container.agenda-view {
+        display:block;
+    }
+ 
+/*Hide month view of calendar*/    
+    div.embed-container.month-view {
+        display:none;
+    }
+}
+    
+/* PHONE */
+@media all and (max-width:850px) {
+    div.wrapper {
+        width:100%;
+    }
+    
+    section {
+        width:100%;
+        float:none;
+    }
+
+    aside {
+        width:100%;
+        float:none;
+    }    
+ 
+/*Hide month view of calendar*/    
+    div.embed-container.desktop {
+        display:none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
